@@ -10,7 +10,7 @@ fetch(url)
 // Coffee section //
 
 /* Iced coffee */
-// get data about the names of iced coffee //
+// get data  of iced coffee //
 async function getIcedCoffeeData() {
   try {
     const response = await fetch('https://api.sampleapis.com/coffee/iced');
@@ -19,42 +19,31 @@ async function getIcedCoffeeData() {
     }
 
     const data = await response.json();
-    data.forEach (coffee => {
-    const kinds = `<div> ${coffee.title} </div>`;
-    document.querySelector ('.coffee-name').insertAdjacentHTML(`beforeend`, kinds);
-    });
 
+    const coffeeList = document.getElementById('coffee-list');
+    coffeeList.innerHTML = ''; 
+
+    data.forEach (coffee => {
+      coffeeList.innerHTML += `<div class="column iced-coffee-card">
+          <div class="content">
+              <div class="coffee-image">
+                  <img src="${coffee.image}" alt="${coffee.title}" style="width: 200px; height: auto;">
+              </div>
+              <h4 class="coffee-name">${coffee.title}</h4>
+              <p><button id = "order" onclick ="chooseDrink('${coffee.title}')"> Order </button></p>
+          </div>
+      </div>`;
+});
   } catch (error) {
     console.error(error);
   }
+
 }
 
-getIcedCoffeeData()
-
-// get data of iced coffee images//
-async function getIcedCoffeeImages() {
-  try {
-    const response = await fetch('https://api.sampleapis.com/coffee/iced');
-    if (!response.ok) {
-      throw new Error('Request failed');
-    }
-  
-    const data = await response.json();
-    data.forEach (coffee => {
-    const photo = `<div> 
-    <img src="${coffee.image}" alt="${coffee.name}" style="width: 200px; height: auto;"></div>`;
-    document.querySelector ('.coffee-image').insertAdjacentHTML(`beforeend`, photo);
-    });
-  
-  } catch (error) {
-    console.error(error);
-  }
-}
-  
-getIcedCoffeeImages()
+getIcedCoffeeData();
 
 /* Hot coffee */
-// get data about the names of hot coffee //
+// get data  of hot coffee //
 async function getHotCoffeeData() {
   try {
     const response = await fetch('https://api.sampleapis.com/coffee/hot');
@@ -63,36 +52,42 @@ async function getHotCoffeeData() {
     }
 
     const data = await response.json();
-    data.forEach (coffee => {
-    const kinds = `<div> ${coffee.title} </div>`;
-    document.querySelector ('.coffee-name').insertAdjacentHTML(`beforeend`, kinds);
-    });
 
+    const coffeeList = document.getElementById('coffee-list');
+    coffeeList.innerHTML = ''; 
+
+    data.forEach (coffee => {
+      coffeeList.innerHTML += `<div class="column iced-coffee-card">
+          <div class="content">
+              <div class="coffee-image">
+                  <img src="${coffee.image}" alt="${coffee.title}" style="width: 200px; height: auto;">
+              </div>
+              <h4 class="coffee-name">${coffee.title}</h4>
+              <p><button onclick="chooseDrink('${coffee.title}')"> Order </button></p>
+          </div>
+      </div>`;
+});
   } catch (error) {
     console.error(error);
   }
+
 }
 
-getHotCoffeeData()
+getHotCoffeeData();
 
-// get data of hot coffee images//
-async function getHotCoffeeImages() {
-  try {
-    const response = await fetch('https://api.sampleapis.com/coffee/hot');
-    if (!response.ok) {
-      throw new Error('Request failed');
-    }
-  
-    const data = await response.json();
-    data.forEach (coffee => {
-    const photo = `<div> 
-    <img src="${coffee.image}" alt="${coffee.name}" style="width: 200px; height: auto;"></div>`;
-    document.querySelector ('.coffee-image').insertAdjacentHTML(`beforeend`, photo);
-    });
-  
-  } catch (error) {
-    console.error(error);
+// Function to filter the drinks
+function filterSelection(category) {
+  const columns = document.querySelectorAll('.column');
+  if (category === 'all') {
+      columns.forEach(column => column.style.display = 'block');
+  } else {
+      columns.forEach(column => {
+          if (column.classList.contains(category)) {
+              column.style.display = 'block';
+          } else {
+              column.style.display = 'none';
+          }
+      });
   }
 }
-  
-getHotCoffeeImages()
+
