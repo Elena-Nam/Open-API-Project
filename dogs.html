@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author"content="Elena Nam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    
+
+    <title>Dogs</title>
+</head>
+
+<body>
+    <main> 
+        <header>
+            <div class ="navbar">
+                 <nav id="nav">                          
+                 <a class="active" href="index.html"><strong> Home </strong></a>
+                 <a href="drinks.html"><strong> Coffee </strong></a> 
+                 <a href="reservation.html"><strong> Reservation </strong></a>
+                 </nav>
+            </div>
+        </header>
+
+        <div id = "dogs_page" class = "container-main">
+        <section id ="dogs">
+                <h2> Choose a dog </h2>
+
+            <form class="search" action="">
+                <input type="text" id="myInput" onkeyup="myFunction()"  placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <div class="dog_card">
+            <div class="row" id="dogs-list"></div>
+            <ul id="dogsName"></ul>
+            </div>
+
+        </section>
+        
+        </div> <!-- closing div for container-main -->
+
+        <div class = "container_two_buttons">
+            <button class="back"><a href="index.html">&laquo; Back </a></button>
+            <button class="next"><a href="reservation.html">Next &raquo;</a></button>
+            </div>
+        
+    </main>
+    <script src = "./js/dogs.js"></script>
+</body>
+</html>

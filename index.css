@@ -1,73 +1,96 @@
 body {
-    background-color: #DAAD86;
-    color:   #3b2512;
-    padding: 20px;
-   font-family: Arial;
-   font-size: 1.2em;
+  background-color: #DAAD86;
+  color:   #3b2512;
+  padding: 20px;
+  font-family: Arial;
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 
-h2{
-  font-family: "Are You Serious", cursive;
-  font-size: 2.2em; 
+h1 {
+font-size: 1.7em;
 }
 
+h2 {
+font-family: "Are You Serious", cursive;
+font-size: 2.2em; 
+}
+
+/* navigation */
 .navbar {
-    background-color: #FBEEC1;
-    overflow: hidden;
-    width: 50%;
-    margin: 0 auto;  
-    top: 0;
-    display: flex;
-    justify-content: space-evenly;
-    font-family: "Are You Serious", cursive;
-    font-weight: 900;
-    font-style: normal;
-  }
-    
+  background-color: #FBEEC1;
+  overflow: hidden;
+  width: 40%;
+  margin: 0 auto;  
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Are You Serious", cursive;
+  font-style: normal;
+  border-radius: 5px;
+}
   
-  .navbar a {
-    float: left;
-    color:  #3b2512;
-    letter-spacing: 1px;
-    text-align: center;
-    padding: .5em;
-    text-decoration: none;
-    font-size: 2em; 
-    /*border: solid 1px #3b2512;*/
-    
-  }
-  
-  a:hover {
-    text-decoration: underline 2px;
-
-  }
-    
-  
-  /*
-  header {
-    position: sticky;
-    top: 0;
-  }
-*/
-.container-main{
-    display: grid;
-    margin: auto;
-    justify-content: center;
+.navbar a {
+  float: left;
+  color:  #3b2512;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: .5em;
+  text-decoration: none;
+  font-size: 2em;     
 }
 
-#welcome{
-    display: flex;
-    flex-direction: column;
-    margin-top: 2em;
-    /*background-color: #FBEEC1;*/
-    padding: 2rem;
-    width: 40%;
-    
+.navbar a:hover {
+  text-decoration: underline 2px;
+  font-size: 2.2em;
+}
+  
+/* buttons back and next */
+.container_two_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_two_buttons_index {
+display: flex;
+justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+button .back .next {
+  background-color: #FBEEC1; /* colors are not working*/
+  color: #3b2512;
+}
+
+.back .next a:hover {
+  background-color: #ddd; /* colors are not working*/
+  color: black;
+}
+
+
+
+.container-main{
+  display: grid;
+  margin: auto;
+  justify-content: center;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  padding: 2rem;
+  width: 40%;
 }
 
 .logo {
-  font-family: "Are You Serious", cursive;
-  font-size: 2.5em;
+font-family: "Are You Serious", cursive;
+font-size: 2em;
 }
 
 
@@ -75,13 +98,13 @@ h2{
 
 /* footer */
 footer {
-   
-    color: #3b2512;
-    font-size: 1.15rem;
-    text-align: center;   
-    margin-bottom: -1.5em;
-    width: 100%;
-    height: 3em;
+ 
+  color: #3b2512;
+  font-size: 1.15rem;
+  text-align: center;   
+  margin-bottom: -1.5em;
+  width: 100%;
+  height: 3em;
 }
 
 
@@ -89,183 +112,262 @@ footer {
 /* COFFEE SECTION */
 /* 
 .container_coffee {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  flex-wrap: wrap;
-  gap: 16px; 
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+flex-wrap: wrap;
+gap: 16px; 
 }
 
 
 .column {
-  flex: 1 1 calc(33.333% - 16px); // Three columns layout with space //
-  box-sizing: border-box;
+flex: 1 1 calc(33.333% - 16px); // Three columns layout with space //
+box-sizing: border-box;
 }
 .coffee-image img {
-  width: 100%; // Responsive image width //
-  height: auto;
+width: 100%; // Responsive image width //
+height: auto;
 }
 .coffee-name {
-  margin-top: 8px;
+margin-top: 8px;
 }
 // Hide elements by default //
 .column {
-  display: none;
+display: none;
 }
 // Show elements with 'show' class //
 .show {
-  display: block;
+display: block;
 }
 // Style for the active button //
 .btn.active {
-  background-color: #666;
-  color: white;
+background-color: #666;
+color: white;
 }
 // Basic button styling //
 .btn {
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  border: none;
-  background-color: #f1f1f1;
+margin: 5px;
+padding: 10px 20px;
+cursor: pointer;
+border: none;
+background-color: #f1f1f1;
 }
 */
 
 /*  COFFEE SECTION */
 #coffee {
-  width: 80%;
-  padding: 10px;
-  margin: auto;
+width: 80%;
+padding: 10px;
+margin: auto;
 }
 
 
 .btn {
-  padding: 10px;
-  margin-right: 5px;
-  border: none;
-  cursor: pointer;
-  background-color: #FBEEC1;
-  font-size: 1em;
-  border-radius: 3px;
+padding: 10px;
+margin-right: 5px;
+border: none;
+cursor: pointer;
+background-color: #FBEEC1;
+font-size: 1em;
+border-radius: 3px;
 }
 
 .btn.active {
-  background-color: #00b353;
+background-color: #04AA6D;
 }
 
 
 
 .container_coffee {
-  display: flex;
-  flex-wrap: wrap;
-  
+display: flex;
+flex-wrap: wrap;
+
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 
 .column {
-  flex: 1 1 200px; /* Adjust to fit your layout */
-  margin: 10px;
-  box-sizing: border-box;
+flex: 1 1 200px; /* Adjust to fit your layout */
+margin: 10px;
+box-sizing: border-box;
 }
 
 .coffee-image img {
-  width: 80%; /* Adjust to fit your layout */
+width: 80%; /* Adjust to fit your layout */
 
 }
 
 .coffee-name {
-  text-align: center;
-  margin: 10px 0;
+text-align: center;
+margin: 10px 0;
 
 }
 
 .content {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
+border: 1px solid #ddd;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+text-align: center;
 }
 
+#order {
+background-color: #FBEEC1;
+border-radius: 5px;
+width: 5em;
+height: 2em;
+font-size: 18px;
+padding:0px;
+}
+
+#order:hover {
+background-color: #04AA6D;
+}
 
 /* DOGS SECTION */
 
-.dog_card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 200px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    background-color: #FBEEC1;
-  }
-  
-  .age {
-    color: grey;
-    font-size: 22px;
-  }
-  
-  .dog_card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: #3b2512;
-    background-color: #00b353;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .dog_card button:hover {
-    opacity: 0.7;
-  }
+form.search {
+position: relative;
+width: 600px; 
+}
 
-  /* RESERVATION SECTION */
+form.search input[type="text"] {
+padding: 10px;
+font-size: 17px;
+border: 1px solid #3b2512;
+background: #FBEEC1;
+width: calc(100% - 82px); 
+box-sizing: border-box; 
+border-radius: 4px 0 0 4px; 
+}
+
+form.search button {
+  width: 80px; 
+  padding: 10px;
+  background: #FBEEC1;
+  color: #3b2512;
+  font-size:17px;
+  border: 1px solid #3b2512;
+  border-left: none; 
+  border-radius: 0 4px 4px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 5px;
+ 
+}
+
+.search button:hover {
+  background: #04AA6D;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.dog_card button {
+  /*border: none;*/
+  outline: 0;
+  padding: 5px;
+  color: #3b2512;
+  background-color: #FBEEC1;
+  text-align: center;
+  cursor: pointer;
+  width: 4em;
+  height: 2em;
+  font-size: 18px;
+  border-radius: 5px;
   
+}
+
+.dog_card button:hover {
+  background-color: #04AA6D;
+}
+
+ .btn_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+
+
+
+/* RESERVATION SECTION */
+
+.container-reserve {
+display: flex;
+flex-direction: row;
+gap: 5em;
+}
+
 /* Add padding to containers */
 .container_booking {
-  padding: 16px;
-  background-color: #FBEEC1;
-  width: 30%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 16px;
+background-color: #FBEEC1;
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 input[type=text], input[type=number] {
-  width: 90%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+width: 90%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
 }
 
 
 input[type=text]:focus, input[type=number]:focus {
-  background-color: #ddd;
-  outline: none;
+background-color: #ddd;
+outline: none;
 }
 
 hr {
-  border: 1px solid #DAAD86;
-  margin-bottom: 25px;
+border: 1px solid #DAAD86;
+margin-bottom: 25px;
 }
 
 .reservationbtn {
-  background-color: #04AA6D;
-  padding: 16px 20px;
-  margin-left: 10em;
-  border: #ddd;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 30%;
- /* opacity: 0.9;*/
-  font-size: .75em;
+background-color: #04AA6D;
+padding: 16px 20px;
+margin-left: 10em;
+border: #ddd;
+border-radius: 5px;
+cursor: pointer;
+width: 30%;
+/* opacity: 0.9;*/
+font-size: .75em;
 }
 
-.reservationbtn:hover {
-  opacity: 1;
+/* The popup chat - hidden by default */
+
+
+/* Add styles to the form container */
+.form-container {
+max-width: 100%;
+padding: 10px;
+background-color: #FBEEC1;
+border-radius: 10px;
+padding: 2em;
 }
+
+/* close button */
+.form-container .btn {
+background-color: #04AA6D;
+color: #3b2512;
+padding: .5em;
+border: none;
+width: 30%;
+margin-bottom: 10px;
+border-radius: 5px;
+}
+
