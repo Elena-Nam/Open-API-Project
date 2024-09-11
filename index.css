@@ -1,0 +1,271 @@
+body {
+    background-color: #DAAD86;
+    color:   #3b2512;
+    padding: 20px;
+   font-family: Arial;
+   font-size: 1.2em;
+}
+
+h2{
+  font-family: "Are You Serious", cursive;
+  font-size: 2.2em; 
+}
+
+.navbar {
+    background-color: #FBEEC1;
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;  
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Are You Serious", cursive;
+    font-weight: 900;
+    font-style: normal;
+  }
+    
+  
+  .navbar a {
+    float: left;
+    color:  #3b2512;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 2em; 
+    /*border: solid 1px #3b2512;*/
+    
+  }
+  
+  a:hover {
+    text-decoration: underline 2px;
+
+  }
+    
+  
+  /*
+  header {
+    position: sticky;
+    top: 0;
+  }
+*/
+.container-main{
+    display: grid;
+    margin: auto;
+    justify-content: center;
+}
+
+#welcome{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    /*background-color: #FBEEC1;*/
+    padding: 2rem;
+    width: 40%;
+    
+}
+
+.logo {
+  font-family: "Are You Serious", cursive;
+  font-size: 2.5em;
+}
+
+
+
+
+/* footer */
+footer {
+   
+    color: #3b2512;
+    font-size: 1.15rem;
+    text-align: center;   
+    margin-bottom: -1.5em;
+    width: 100%;
+    height: 3em;
+}
+
+
+
+/* COFFEE SECTION */
+/* 
+.container_coffee {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 16px; 
+}
+
+
+.column {
+  flex: 1 1 calc(33.333% - 16px); // Three columns layout with space //
+  box-sizing: border-box;
+}
+.coffee-image img {
+  width: 100%; // Responsive image width //
+  height: auto;
+}
+.coffee-name {
+  margin-top: 8px;
+}
+// Hide elements by default //
+.column {
+  display: none;
+}
+// Show elements with 'show' class //
+.show {
+  display: block;
+}
+// Style for the active button //
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+// Basic button styling //
+.btn {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #f1f1f1;
+}
+*/
+
+/*  COFFEE SECTION */
+#coffee {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+}
+
+
+.btn {
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #FBEEC1;
+  font-size: 1em;
+  border-radius: 3px;
+}
+
+.btn.active {
+  background-color: #00b353;
+}
+
+
+
+.container_coffee {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 1 200px; /* Adjust to fit your layout */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.coffee-image img {
+  width: 80%; /* Adjust to fit your layout */
+
+}
+
+.coffee-name {
+  text-align: center;
+  margin: 10px 0;
+
+}
+
+.content {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+/* DOGS SECTION */
+
+.dog_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #FBEEC1;
+  }
+  
+  .age {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .dog_card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #3b2512;
+    background-color: #00b353;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .dog_card button:hover {
+    opacity: 0.7;
+  }
+
+  /* RESERVATION SECTION */
+  
+/* Add padding to containers */
+.container_booking {
+  padding: 16px;
+  background-color: #FBEEC1;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type=text], input[type=number] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+input[type=text]:focus, input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #DAAD86;
+  margin-bottom: 25px;
+}
+
+.reservationbtn {
+  background-color: #04AA6D;
+  padding: 16px 20px;
+  margin-left: 10em;
+  border: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+ /* opacity: 0.9;*/
+  font-size: .75em;
+}
+
+.reservationbtn:hover {
+  opacity: 1;
+}

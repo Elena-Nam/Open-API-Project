@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+     <meta name="author"content="Elena Nam">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="index.css">
+    
+     
+    <title>Taily Daily</title>
+</head>
+<body>
+    <main> 
+        <header>
+            <div class ="navbar">
+                 <nav id="nav">                          
+                 <a class="active" href="#home"><strong> Home </strong></a>
+                 <a href="#coffee"><strong> Coffee </strong></a> 
+                 <a href="#dogs"><strong> Dogs </strong></a>
+                 <a href="#reservation"><strong> Reservation </strong></a>
+                 </nav>
+        </header>
+        <div id = "main_page" class = "container-main">
+        <div id = "welcome" class ="container">
+            <h1> Welcome to <div class = "logo"> Taily Daily! </div></h1>
+            <p> This is a place where you can enjoy your time with a dog from a nearby shelter.</p>
+            <p>Make your coffee break extra cuddly by spending time with our adorable friends! Meet cute adoptable  dogs from the shelter while enjoying your coffee in our comfortable and cozy cafe.</p>
+        </div><!-- closing div for welcome -->
+
+        <div class = "box">
+
+        <img src = "n.png" alt = "">
+
+
+<section id ="coffee">
+        <h2> Choose a drink </h2>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Show all  </button>
+            <button class="btn" onclick="filterSelection('iced-coffee')"> Iced  coffee </button>
+            <button class="btn" onclick="filterSelection('hot-coffee')"> Hot coffee </button>
+            <button class="btn" onclick="filterSelection('other-drinks')"> Other drinks </button>
+        </div>
+
+    <div class = "container_coffee">
+    <div class = "note">
+        <img src = "board.png" alt = "">
+    </div>
+ 
+<!-- Portfolio Gallery Grid -->
+<div class="row" id="coffee-list"></div>
+</div> <!-- END GRID -->
+</section>
+
+<section id ="dogs">
+    <h2> Choose a dog </h2>
+    <div class="dog_card">
+        <img src="me.jpg" alt="this is me" style="width:100%">
+        <h2>I am ... </h2>
+        <p class="age"> 3 years old </p>
+        <p>Some text about the dog</p>
+        <p><button>Choose</button></p>
+      </div>
+</section>
+
+<section id = "reservation">
+    <h2> Make a reservation </h2>
+    <form action="reservation" method = "post">
+        <div class="container_booking">
+          
+          <p>Please fill in this form to finish your reservation.</p>
+          <hr>
+          <label for="name"><b> Dog's name: </b></label>
+          <div class = "booking-dog"> This is the place for dog's photo </div><br>
+          <button type="submit" class="reservationbtn"> BOOK NOW </button><br>
+
+          <label for="name"><b> Your name: </b></label><br>
+          <input type="text" placeholder="Enter your name" name="name" id="name" required><br>
+      
+          <label for="number"><b>Your phone number: </b></label><br>
+          <input type="number" placeholder="Enter your phone number" name="amount" id="amount" required><br>
+
+          <label for="drink"><b>Your drink </b></label>
+          <div class = "booking-drink"> This is the place for booked drink </div>
+
+        </div><!-- closing div for container-booking -->
+      </form>
+      <div class="dog_footsteps">
+
+      </div>
+        
+</section>
+
+<section id = "thanks">
+    <h2> Thank you for reservation </h2>
+</section>
+
+        </div><!-- closing div for box -->
+    </div> <!-- closing div for main -->
+
+<footer>
+    <p> Contact Us: </p>
+</footer>
+</main>
+
+    <script src = "index.js"></script>
+ 
+    
+</body>
+</html>
