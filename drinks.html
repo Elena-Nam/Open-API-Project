@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    
+   
 
     <title> Drinks </title>
 </head>
@@ -19,7 +19,8 @@
         <header>
             <div class ="navbar">
                  <nav id="nav">                          
-                 <a class="active" href="index.html"><strong> Home </strong></a>
+                 <a href="index.html"><strong> Home </strong></a>
+                 <a class="active"><strong> Coffee </strong></a> 
                  <a href="dogs.html"><strong> Dogs </strong></a> 
                  <a href="reservation.html"><strong> Reservation </strong></a>
                  </nav>
@@ -29,13 +30,12 @@
             <h2> Choose a drink </h2>
             <div id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')">Show all  </button>
-                <button class="btn" onclick="filterSelection('iced-coffee')"> Iced  coffee </button>
-                <button class="btn" onclick="filterSelection('hot-coffee')"> Hot coffee </button>
+                <button class="btn" onclick="getIcedCoffeeData(); filterSelection('iced-coffee-card');"> Iced  coffee </button>
+                <button class="btn" onclick="getHotCoffeeData(); filterSelection('hot-coffee-card');"> Hot coffee </button>
                 <button class="btn" onclick="filterSelection('other-drinks')"> Other drinks </button>
             </div>
     
             <div class = "container_coffee">
-            
             </div>
      
             <!-- Portfolio Gallery Grid -->
