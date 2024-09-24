@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author"content="Elena Nam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+   
+
+    <title> Drinks </title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class ="navbar">
+                 <nav id="nav">                          
+                 <a href="index.html"><strong> Home </strong></a>
+                 <a class="active"><strong> Coffee </strong></a> 
+                 <a href="dogs.html"><strong> Dogs </strong></a> 
+                 <a href="reservation.html"><strong> Reservation </strong></a>
+                 </nav>
+            </div>
+        </header>
+        <section id ="coffee">
+            <h2> Choose a drink </h2>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Show all  </button>
+                <button class="btn" onclick="getIcedCoffeeData(); filterSelection('iced-coffee-card');"> Iced  coffee </button>
+                <button class="btn" onclick="getHotCoffeeData(); filterSelection('hot-coffee-card');"> Hot coffee </button>
+                <button class="btn" onclick="filterSelection('other-drinks')"> Other drinks </button>
+            </div>
+    
+            <div class = "container_coffee">
+            </div>
+     
+            <!-- Portfolio Gallery Grid -->
+            <div class="row" id="coffee-list"></div>
+        
+        </section>
+        <div class = "container_two_buttons">
+        <button class="back"><a href="index.html">&laquo; Back </a></button>
+        <button class="next"><a href="dogs.html">Next &raquo;</a></button>
+        </div>
+    </main>
+    <script src = "./js/drinks.js"></script>
+</body>
+</html>
