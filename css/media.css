@@ -1,0 +1,14 @@
+@media (max-width: 850px)  {
+    body {
+    font-size: 1.25rem; 
+    }
+    .navbar{
+        width: 90%;
+    }
+    .container-reserve {
+        flex-direction: column;
+    }
+    .container_booking {
+        width: 90%;
+    }
+}

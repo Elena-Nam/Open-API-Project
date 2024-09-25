@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author"content="Elena Nam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
+    
+    <title> Gifts </title>
+</head>
+<body>
+    <main> 
+        <header>
+            <div class ="navbar">
+                <nav id="nav">                          
+                    <a href="index.html"><strong> Home </strong></a>
+                    <a href="drinks.html"><strong> Coffee </strong></a> 
+                    <a class="dogs.html"><strong> Dogs </strong></a>
+                    <a class="active"><strong> Gifts </strong></a>
+                    <a href="reservation.html"><strong> Reservation </strong></a>
+                    </nav>
+        </header>
+       
+        <section id ="gifts">
+        <h2> Buy a snack or a toy for the dog </h2>
+            <div class="container_gifts">
+            <div class="gift_row">
+                
+                <div class="content">
+                    <div class="gift-image">
+                    <img src = "./images/chicken_snacks.jpg" alt = "chicken snacks">
+                    </div>
+                    <h4 class="gift-name">"Bones" snacks </h4>
+                    <p><button class ="order" onclick="chooseGift('Bones snacks')"> Book </button></p>
+                </div>
+               
+                <div class="content">
+                    <div class="gift-image">
+                    <img src = "./images/color_snacks.jpg" alt = "colorful snacks">
+                    </div>
+                    <h4 class="gift-name"> "Colorful bones" snacks </h4>
+                    <p><button class ="order" onclick="chooseGift('Colorful bones snacks')"> Book </button></p>
+                </div>
+                <div class="content">
+                    <div class="gift-image">
+                    <img src = "./images/dumbbells.jpg" alt = "dumbbells snacks" >
+                    </div>
+                    <h4 class="gift-name"> "Dumbbells" snacks </h4>
+                    <p><button class ="order" onclick="chooseGift('Dumbbells snacks')"> Book </button></p>
+                </div>
+                <div class="content">
+                    <div class="gift-image">
+                    <img src = "./images/heart_snack.jpg" alt = "heart snacks" >
+                    </div>
+                    <h4 class="gift-name"> "Hearts" snacks </h4>
+                    <p><button class ="order" onclick="chooseGift('Hearts snacks')"> Book </button></p>
+                </div>
+                
+               
+                <div class="content">
+                    <div class="gift-image">
+                    <img src ="./images/big_snacks.jpg" alt = "big snacks" >
+                    </div>
+                    <h4 class="gift-name"> "Big bones" snacks</h4>
+                    <p><button class ="order" onclick="chooseGift('Big bones snacks')"> Book </button></p>
+                </div>
+
+                <div class="content">
+                    <div class="gift-image">
+                    <img src ="./images/duck.jpg" alt = "duck toy" >
+                    </div>
+                    <h4 class="gift-name"> Duck </h4>
+                    <p><button class ="order" onclick="chooseGift('Duck')"> Book </button></p>
+                </div>
+
+                <div class="content">
+                    <div class="gift-image">
+                    <img src = "./images/ropes.jpg" alt = "ropes toys" >
+                    </div>
+                    <h4 class="gift-name"> Ropes </h4>
+                    <p><button class ="order" onclick="chooseGift('Ropes')"> Book </button></p>
+                </div>
+
+                <div class="content">
+                    <div class="gift-image">
+                    <img src = "./images/three_balls.jpg" alt = "balls toys" >
+                    </div>
+                    <h4 class="gift-name"> Balls </h4>
+                    <p><button class ="order" onclick="chooseGift('Balls')"> Book </button></p>
+                </div>
+
+                <div class="content">
+                    <div class="gift-image">
+                    <img src = "./images/pink_toys.jpg" alt = "pink rubber toys" >
+                    </div>
+                    <h4 class="gift-name"> "Rubber toys" </h4>
+                    <p><button class ="order" onclick="chooseGift('Pink rubber toys')"> Book </button></p>
+                </div>
+            </div> <!--closing div for gift row-->
+            </div><!-- closing div for container-->
+        </section>
+
+        <div class = "container_two_buttons">
+            <button class="back"><a href="dogs.html">&laquo; Back </a></button>
+            <button class="next"><a href="reservation.html">Next &raquo;</a></button>
+        </div>
+
+        <button class = "btn" onclick="topFunction()" id="topBtn" title="Go to top"><strong> Top </strong></button> 
+        
+        <footer>
+            <p> Elena Nam &copy; <span id="year"></span> </p>
+        </footer>
+        
+    </main>
+        <script src = "./js/gifts.js"></script>
+
+</body>
+</html>
