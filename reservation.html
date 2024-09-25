@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/media.css">
    
-
     <title> Reservation</title>
 </head>
 
@@ -22,6 +22,7 @@
                 <a href="index.html"><strong> Home </strong></a>
                 <a href="drinks.html"><strong> Coffee </strong></a> 
                 <a href="dogs.html"><strong> Dogs </strong></a>
+                <a href = "gifts.html"><strong> Gifts </strong></a>
                 <a class="active"><strong> Reservation </strong></a>
                 </nav>
             </div>
@@ -35,44 +36,49 @@
                 <p>Please fill in this form to finish your reservation.</p>
                 <hr>
                 <label for="name"><b> Dog's name: </b></label>
-                <div class = "booking-dog"> This is the place for dog's photo </div><br>
+                <div id = "booking-dog"> </div><br>
+                
+                <label for="gift"><b> Dog's gift: </b></label>
+                <div id ="booking-gift"> </div>
+
                 <button type="button" class="reservationbtn" id="bookNowBtn">BOOK NOW</button><br>
+
                 <label for="name"><b> Your name: </b></label><br>
                 <input type="text" placeholder="Enter your name" name="name" id="name" required><br>
           
                 <label for="number"><b>Your phone number: </b></label><br>
                 <input type="number" placeholder="Enter your phone number" name="amount" id="amount" required><br>
     
-                <label for="drink"><b>Your drink </b></label>
-                <div class = "booking-drink"> This is the place for booked drink </div>
-    
+                <label for="drink"><b>Your drink: </b></label>
+                <div id ="booking-drink"> </div>
+
             </div><!-- closing div for container-booking -->
           </form>
-          
-         
-                    
+                  
         </section>
 
-        <section id = "thanks">
-            <h2> Thank you for reservation </h2>
-          
+        <section id = "thanks">       
             <div class="chat-popup" id="myForm">
             <form action="/action_page.php" class="form-container">
-                <h3>Thank you, <span id="userName">NAME</span></h3>
-                <p> I am looking forward to meeting with you!</p>
-                <p> Dog's photo</p>
-
-                <button type="button" class="btn close" onclick="closeForm()"> Close </button>
+                <h3>Thank you, <span id="userName">NAME</span></h3> 
                 <div class ="heart">
-                    <img src = "heart.png" alt = "dogs heart" width = 100px;>
+                    <img src = "./images/heart.png" alt = "dogs heart" width =100px;> 
                 </div>
+                <p> I am looking forward to meeting with you!</p>
+                <img id="petPhoto" alt="Dog's photo">
+                <button type="button" class="btn close" onclick="closeForm()"> Close </button>
             </form>
             </div>
         </section>
         </div>
+        
         <div class = "container_two_buttons">
-        <button><a href="dogs.html" class="back">&laquo; Back </a></button>
+        <button><a href="gifts.html" class="back">&laquo; Back </a></button>
         </div>
+        
+        <footer>
+            <p> Elena Nam &copy; <span id="year"></span> </p>
+        </footer>
     </main>
     <script src = "./js/reservation.js"></script>
 

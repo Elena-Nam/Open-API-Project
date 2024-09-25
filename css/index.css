@@ -18,11 +18,9 @@ font-size: 2.2em;
 
 /* navigation */
 .navbar {
- /* background-color: #FBEEC1;*/
   overflow: hidden;
-  width: 40%;
+  width: 60%;
   margin: 0 auto;  
-  top: 0;
   display: flex;
   justify-content: space-evenly;
   font-family: "Are You Serious", cursive;
@@ -68,45 +66,31 @@ a {
 }
 
 .back .next {
-  background-color: #FBEEC1; /* colors are not working*/
+  background-color: #FBEEC1; 
   color: #3b2512;
 }
 
-.back .next a:hover {
-  background-color: red; /* colors are not working*/
-  color: red;
-}
-
-
-
 .container-main{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   margin: auto;
   justify-content: center;
   gap: 2em;
-  
- 
+  align-items: center;
 }
 
 
 #welcome {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
   padding: 2rem;
-  width: 100%;
-  
+  width: 100%;  
+  text-align: center;
+  margin-top: -2em;
 }
 
 .logo {
 font-family: "Are You Serious", cursive;
 font-size: 2em;
-}
-
-.heart {
-padding-left: 10em;
-
 }
 
 .container_photo {
@@ -123,6 +107,9 @@ width: 100%;
 height: 100%;
 object-fit: cover; 
 opacity: 1;
+border: 5px solid #3b2512; 
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -137,58 +124,12 @@ footer {
 }
 
 
-
-/* COFFEE SECTION */
-/* 
-.container_coffee {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-flex-wrap: wrap;
-gap: 16px; 
-}
-
-
-.column {
-flex: 1 1 calc(33.333% - 16px); // Three columns layout with space //
-box-sizing: border-box;
-}
-.coffee-image img {
-width: 100%; // Responsive image width //
-height: auto;
-}
-.coffee-name {
-margin-top: 8px;
-}
-// Hide elements by default //
-.column {
-display: none;
-}
-// Show elements with 'show' class //
-.show {
-display: block;
-}
-// Style for the active button //
-.btn.active {
-background-color: #666;
-color: white;
-}
-// Basic button styling //
-.btn {
-margin: 5px;
-padding: 10px 20px;
-cursor: pointer;
-border: none;
-background-color: #f1f1f1;
-}
-*/
-
 /*  COFFEE SECTION */
 #coffee {
 width: 80%;
 padding: 10px;
 margin: auto;
 }
-
 
 .btn {
 padding: 10px;
@@ -210,11 +151,9 @@ background-color: #04AA6D;
 color:#3b2512;
 }
 
-
 .container_coffee {
 display: flex;
 flex-wrap: wrap;
-
 }
 
 .row {
@@ -223,21 +162,18 @@ flex-wrap: wrap;
 }
 
 .column {
-flex: 1 1 200px; /* Adjust to fit your layout */
+flex: 1 1 200px; 
 margin: 10px;
 box-sizing: border-box;
-
 }
 
 .coffee-image img {
-width: 80%; /* Adjust to fit your layout */
-
+width: 80%; 
 }
 
 .coffee-name {
 text-align: center;
 margin: 10px 0;
-
 }
 
 .content {
@@ -281,52 +217,9 @@ border-radius: 5px;
 box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 text-align: center;
 width: 12em;
-
 }
-form.search {
-position: relative;
-width: 600px; 
-}
-
-form.search input[type="text"] {
-padding: 10px;
-font-size: 17px;
-border: 1px solid #3b2512;
-background: #FBEEC1;
-width: calc(100% - 82px); 
-box-sizing: border-box; 
-border-radius: 4px 0 0 4px; 
-}
-
-form.search button {
-  width: 80px; 
-  padding: 10px;
-  background: #FBEEC1;
-  color: #3b2512;
-  font-size:17px;
-  border: 1px solid #3b2512;
-  border-left: none; 
-  border-radius: 0 4px 4px 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 5px;
- 
-}
-
-.search button:hover {
-  background: #04AA6D;
-}
-
-form.search::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 
 .dog_card button {
-  /*border: none;*/
   outline: 0;
   padding: 5px;
   color: #3b2512;
@@ -337,7 +230,6 @@ form.search::after {
   height: 2em;
   font-size: 18px;
   border-radius: 5px;
-  
 }
 
 .dog_card button:hover {
@@ -375,6 +267,41 @@ form.search::after {
   font-size: 20px;
 }
 
+
+/* GIFTS SECTION */
+.container_gifts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin-bottom: 2em;
+}
+
+.gift_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+#gifts .content {
+  height: 18em;
+}
+
+.gift-image img {
+  width: 80%; 
+  height: auto; 
+}
+
+.gift-name {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.order {
+  letter-spacing: 1px;
+  width: 4em;
+  height: 2em;
+  font-size: 18px;
+}
 
 
 /* RESERVATION SECTION */
@@ -422,20 +349,29 @@ border: #ddd;
 border-radius: 5px;
 cursor: pointer;
 width: 30%;
-/* opacity: 0.9;*/
 font-size: .75em;
 }
 
-/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+}
 
-
-/* Add styles to the form container */
 .form-container {
 max-width: 100%;
 padding: 10px;
 background-color: #FBEEC1;
 border-radius: 10px;
 padding: 2em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#petPhoto  {
+  border: 3px solid #3b2512; 
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 /* close button */
@@ -445,7 +381,26 @@ color: #3b2512;
 padding: .5em;
 border: none;
 width: 30%;
-margin-bottom: 10px;
+margin-top: 1em;
 border-radius: 5px;
 }
 
+/* top button */
+#topBtn {
+  border:  #3b2512 1px  solid;
+  background-color: #FBEEC1;
+  padding: 8px 14px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  left: 100%;
+  transform: translateX(-170%);
+  text-align: right;
+  border-radius: 5px;
+  margin: 30px;
+  position: fixed; 
+  bottom: .5em; 
+}
+
+#topBtn:hover { 
+background-color: #04AA6D;
+}
